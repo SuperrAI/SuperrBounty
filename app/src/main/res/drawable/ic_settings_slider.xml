@@ -1,0 +1,51 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <group>
+        <clip-path android:pathData="M0,0h28v28h-28z" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M5.542,9.333H8.458"
+            android:strokeWidth="2.5"
+            android:strokeColor="#141414"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M14.875,9.333H22.458"
+            android:strokeWidth="2.5"
+            android:strokeColor="#141414"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M5.542,18.667H14.292"
+            android:strokeWidth="2.5"
+            android:strokeColor="#141414"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M20.708,18.667H22.458"
+            android:strokeWidth="2.5"
+            android:strokeColor="#141414"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M14.292,9.333C14.292,10.783 13.116,11.958 11.667,11.958C10.217,11.958 9.042,10.783 9.042,9.333C9.042,7.884 10.217,6.708 11.667,6.708C13.116,6.708 14.292,7.884 14.292,9.333Z"
+            android:strokeWidth="2.5"
+            android:strokeColor="#141414"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M20.125,18.667C20.125,20.116 18.95,21.292 17.5,21.292C16.05,21.292 14.875,20.116 14.875,18.667C14.875,17.217 16.05,16.042 17.5,16.042C18.95,16.042 20.125,17.217 20.125,18.667Z"
+            android:strokeWidth="2.5"
+            android:strokeColor="#141414"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>

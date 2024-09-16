@@ -1,0 +1,29 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+// The buildscript block is where you configure the repositories and dependencies for Gradle itself
+buildscript {
+    dependencies {
+        // Kotlin Gradle plugin for Kotlin support in the project
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.23"
+
+        // Kotlin serialization plugin for JSON serialization/deserialization
+        classpath "org.jetbrains.kotlin:kotlin-serialization:1.9.23"
+    }
+}
+
+// The plugins block is where you declare the Gradle plugins used in all modules of the project
+plugins {
+    // Android application plugin
+    id 'com.android.application' version '8.5.2' apply false
+
+    // Google services plugin for Firebase integration
+    id 'com.google.gms.google-services' version '4.4.2' apply false
+
+    // Kotlin Android plugin
+    id 'org.jetbrains.kotlin.android' version '1.9.23' apply false
+}
+
+// Custom task to clean (delete) the build directory
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

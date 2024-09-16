@@ -1,0 +1,98 @@
+<resources>
+    <!-- App Level -->
+    <string name="app_name">Superr</string>
+
+    <!-- SessionsTab Screen -->
+    <string name="sessions_tab_today">Today</string>
+    <string name="sessions_tab_upcoming_sessions">Upcoming sessions</string>
+    <string name="sessions_tab_no_sessions_today">No sessions scheduled for today</string>
+    <string name="sessions_tab_this_week">This week</string>
+    <string name="sessions_tab_this_month">This month</string>
+    <string name="sessions_tab_all_time">All time</string>
+    <string name="sessions_tab_scheduled">Waiting for teacher to start this class.</string>
+    <string name="sessions_tab_in_progress">Class is in progress.</string>
+    <string name="sessions_tab_completed">Class has ended.</string>
+    <string name="sessions_tab_cancelled">Class has been cancelled.</string>
+
+    <!-- AllMyClassrooms Screen -->
+    <string name="all_my_classrooms_error_text">Error: %1$s</string>
+    <string name="all_my_classrooms_title">My Classrooms</string>
+    <string name="all_my_classrooms_sort_content_desc">Sort</string>
+    <string name="all_my_classrooms_greeting_text">Happy %1$s, %2$s.\nIt’s a great day to learn something new!</string>
+    <string name="all_my_classrooms_default_user">student</string>
+    <string name="all_my_classrooms_grade_section">Class %1$s%2$s</string>
+
+    <!-- SubjectClassroomScreen -->
+    <string name="subject_classroom_error_text">Error: %1$s</string>
+    <string name="subject_classroom_cover_image_desc">SubjectClass cover image</string>
+    <string name="subject_classroom_class">Class %1$s%2$s</string>
+    <string name="subject_classroom_tab_sessions">Sessions</string>
+    <string name="subject_classroom_tab_homework">Homework</string>
+    <string name="subject_classroom_tab_gradebook">Gradebook</string>
+    <string name="subject_classroom_tab_attendance">Attendance</string>
+    <string name="subject_classroom_tab_files">Files</string>
+    <string name="subject_classroom_tab_people">People</string>
+
+    <!-- DeckPlayerScreen -->
+    <string name="deck_player_error_text">Error: %1$s</string>
+    <string name="deck_player_navigate_back_desc">Navigate back</string>
+    <string name="deck_player_no_cards_text">No cards available</string>
+    <string name="deck_player_close_quiz_desc">Close Quiz</string>
+    <string name="deck_player_card_progress">Card %1$d of %2$d</string>
+    <string name="deck_player_card_progress_teacher">Card %1$d</string>
+
+    <!-- Common -->
+    <string name="deck_card_fill_in_the_blank">Fill in the blank:</string>
+    <string name="mcq_select_the_correct_answer">Select the correct answer</string>
+    <string name="mcq_submit">Submit</string>
+    <string name="mcq_white_checked_radio">White checked radio</string>
+    <string name="mcq_grey_unchecked_radio">Grey unchecked radio</string>
+    <string name="mtf_submit">Submit</string>
+    <string name="deck_card_unsupported_card_type">Unsupported card type</string>
+    <string name="deck_button_resource_icon">Resource icon</string>
+    <string name="deck_button_deck_cover_image">Deck cover image</string>
+    <string name="deck_button_selected_deck_item">Selected deck item</string>
+    <string name="live_session_deck_player_error_text">Error: %1$s</string>
+    <string name="deck_player_card_info_description">Comments button</string>
+    <string name="deck_player_timer_description">Deck player timer button</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_answer">Enter your answer</string>
+    <string name="pdf_icon_desc">Icon for PDF file</string>
+    <string name="open_pdf">Open PDF</string>
+    <string name="open_pdf_file">Open PDF File</string>
+    <string name="correct_answer">Correct answer</string>
+    <string name="show_results">Show Result</string>
+    <string name="mcq_students_answered">%1$d / %2$d students answered</string>
+    <string name="desk_decks_title">Decks</string>
+    <string name="desk_files_title">Files</string>
+    <string name="file_icon_description">File icon description</string>
+    <string name="file_selected_description">Selected file description</string>
+    <string name="all_files_error_text">Error loading files</string>
+    <string name="pdf_thumbnail">PDF Thumbnail</string>
+    <string name="pdf_placeholder">PDF Placeholder thumbnail</string>
+    <string name="mcq_correct_answer">You\'re correct!</string>
+    <string name="mtf_show_results">Show results</string>
+    <string name="mcq_incorrect_answer">Oops, that\'s wrong!</string>
+    <string name="dismiss_show_result_modal">Dismiss show results button</string>
+    <string name="result_modal_header">Result</string>
+    <string name="yesno_students_answered">%1$d / %2$d students answered</string>
+    <string name="yesno_submit">Submit</string>
+    <string name="yesno_select_your_answer">Tap to vote</string>
+    <string name="yesno_youve_voted">You\'ve voted!</string>
+    <string name="homework_tab_due_date">Due by %s</string>
+    <string name="submit_homework_next_page_text">Next</string>
+    <string name="submit_homework_page_selector">Page down button</string>
+    <string name="homework_submission_review">Homework . Submission</string>
+    <string name="due_date">Due date</string>
+    <string name="submissions">Submissions</string>
+    <string name="max_score">Max. marks</string>
+    <string name="worksheet_preview">Worksheet</string>
+    <string name="students">Students</string>
+    <string name="review">Review</string>
+    <string name="status">Status</string>
+    <string name="marks">Marks</string>
+    <string name="mcq_correct_answer_format">Yes, \"%1$s\" is correct!</string>
+    <string name="mcq_incorrect_answer_format">Oops, \"%1$s\" is incorrect.</string>
+
+
+</resources>

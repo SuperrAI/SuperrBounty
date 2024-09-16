@@ -1,0 +1,141 @@
+// Define the plugins used in the project
+plugins {
+    id 'com.android.application'
+    // id 'com.google.gms.google-services'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.serialization'
+}
+
+android {
+    // Set the package name for the application
+    namespace 'com.superr.bounty'
+
+    defaultConfig {
+        // Basic application configuration
+        applicationId "com.superr.bounty"
+        minSdk 29
+        compileSdk 34
+        //noinspection ExpiredTargetSdkVersion
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        // Enable multi-dex support
+        multiDexEnabled = true
+
+        // Set up the test instrumentation runner
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    // Configure build types
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Set Java compatibility version
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // Set Kotlin JVM target
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    // Enable Jetpack Compose
+    buildFeatures {
+        compose true
+    }
+
+    // Set Compose Kotlin compiler extension version
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.13"
+    }
+
+    // Configure packaging options
+    packagingOptions {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+        jniLibs {
+            pickFirsts += "**/libc++_shared.so"
+        }
+    }
+
+    // Enable data binding
+    dataBinding {
+        enabled true
+    }
+
+    // Disable including Android resources in unit tests
+    testOptions {
+        unitTests {
+            includeAndroidResources = false
+        }
+    }
+}
+
+// Define project dependencies
+dependencies {
+    // Kotlin Libraries
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.23'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3'
+
+    // AndroidX Core Libraries
+    implementation 'androidx.activity:activity-compose:1.9.2'
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.8.5'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.5'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.8.5'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.navigation:navigation-compose:2.8.0'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+
+    // Jetpack Compose
+    implementation platform('androidx.compose:compose-bom:2024.09.00')
+    implementation 'androidx.compose.foundation:foundation'
+    implementation 'androidx.compose.material3:material3'
+    implementation 'androidx.compose.runtime:runtime-livedata'
+    implementation 'androidx.compose.ui:ui-graphics'
+    androidTestImplementation platform('androidx.compose:compose-bom:2024.09.00')
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+    debugImplementation 'androidx.compose.ui:ui-tooling'
+
+    // Room Database
+    implementation 'androidx.room:room-ktx:2.6.1'
+    implementation 'androidx.room:room-runtime:2.6.1'
+    kapt 'androidx.room:room-compiler:2.6.1'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:33.2.0')
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+
+    // Onyx SDK
+    implementation 'com.onyx.android.sdk:onyxsdk-device:1.2.29'
+    implementation 'com.onyx.android.sdk:onyxsdk-pen:1.4.10.1'
+    implementation 'org.lsposed.hiddenapibypass:hiddenapibypass:4.3'
+
+    // Google MLKit
+    implementation 'com.google.mlkit:digital-ink-recognition:18.1.0'
+
+    // Image Loading
+    implementation 'io.coil-kt:coil-compose:2.4.0'
+
+    // Utility Libraries
+    implementation 'com.google.code.gson:gson:2.10.1'
+    testImplementation 'junit:junit:4.13.2'
+}
